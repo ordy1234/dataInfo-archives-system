@@ -33,7 +33,7 @@
                 <a href="คู่มือการใช้งาน">คู่มือการใช้งาน</a>
             </div>
             <div class="col-sm-4">
-                <span><a href="ติดต่อเรา">ติดต่อเรา</a> </span>
+                <span><a href="contact%20us.php">ติดต่อเรา</a> </span>
             </div>
 
 
@@ -45,7 +45,8 @@
         </div>
     </div>
     <div style="font-size:20px; text-align:center;">
-        TemPlate
+        <body style="background-image: url('https://static.thairath.co.th/media/dFQROr7oWzulq5Fa4ML3BUXIISEJ79b8egh3l82eI17HE6hctBGGoVzKj3ZhodeFLDq.webp')";>
+
     </div>
 
     <div style="font-size:20px; text-align:left;">
@@ -77,13 +78,24 @@
     </div>
 <hr>
 <div>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" id="file" accept=".jpg, .png, .pdf" />
+        <input type="submit" value="Upload" />
+    </form>
+    <a href="download.php?file=<?php echo $filename; ?>">Download</a>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#file').change(function() {
+                let filename = this.value;
+                const valid_extensions = '.jpg, .png, .pdf';
+                let allowed
 
 
 
     </body>
     </html>
 
-    <!--<form action="upload.php" method="post" enctype="multipart/form-data">
+    <form action="upload.php" method="post" enctype="multipart/form-data">
         <input type="file" name="code" accept=".c,.cpp,.h,.hpp" />
         <input type="submit" value="Upload File" />
     </form>

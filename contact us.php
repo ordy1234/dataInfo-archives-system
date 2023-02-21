@@ -11,6 +11,13 @@ if (isset($_POST['submit'])) {
     $email_subject = "Website Contact Form: $name";} ?>
 <div class="contact-form">
     <h2>Contact Us</h2>
+       <p>ordy1234@gmail.com</p>
+    <p>093-093-1871</p>>
+
+    <a href="index.html">Back</a>
+
+
+
 
     <form action="contactUs.php" method="POST">
         <label>Name:</label>
