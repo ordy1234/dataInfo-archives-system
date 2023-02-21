@@ -30,7 +30,7 @@
             </div>
 
             <div class="col-sm-4">
-                <a href="คู่มือการใช้งาน">คู่มือการใช้งาน</a>
+                <a href="download.php?file=<?php echo $filename; ?>">คู่มือการใช้งาน</a>
             </div>
             <div class="col-sm-4">
                 <span><a href="contact%20us.php">ติดต่อเรา</a> </span>
@@ -80,7 +80,7 @@
 <div>
     <form action="upload.php" method="post" enctype="multipart/form-data">
         <input type="file" name="file" id="file" accept=".jpg, .png, .pdf" />
-        <input type="submit" value="Upload" />
+        <input type="submit" value="Save" />
     </form>
     <a href="download.php?file=<?php echo $filename; ?>">Download</a>
     <script type="text/javascript">
@@ -91,20 +91,21 @@
                 let allowed
 
 
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                    <input type="file" name="code" accept=".c,.cpp,.h,.hpp" />
+                    <input type="submit" value="Upload File" />
+                    </form>
 
+            </div>
+                <div style="background-color: #ffaaffff;">
+
+                    <h1 style="font-size:15pt;"> 01.หลักสูตรการศึกษาปฐมวัย พุทธศักราช 2560</h1>
+                    <h2 style="font-size:15pt;">02.หลักสูตรห้องเรียนพิเศษ มอนเตสซอรี่</h2>
+                    <h3 style="font-size:15pt;">03.คู่มือการจัดประสบการณ์</h3>
+
+                </div>
     </body>
     </html>
 
-    <form action="upload.php" method="post" enctype="multipart/form-data">
-        <input type="file" name="code" accept=".c,.cpp,.h,.hpp" />
-        <input type="submit" value="Upload File" />
-    </form>
 
-    </div>
-</div>
 
-<div style="background-color: #ffaaffff;">
-    
-    <h1 style="font-size:15pt;"> 01.หลักสูตรการศึกษาปฐมวัย พุทธศักราช 2560</h1>
-    <h2 style="font-size:15pt;">02.หลักสูตรห้องเรียนพิเศษ มอนเตสซอรี่</h2>
-    <h3 style="font-size:15pt;">03.คู่มือการจัดประสบการณ์</h3>-->
